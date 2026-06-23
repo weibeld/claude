@@ -13,7 +13,7 @@ A [bare repository](https://git-scm.com/docs/git-clone#Documentation/git-clone.t
 Clone the repository with the `--bare` option:
 
 ```bash
-git clone --bare https://github.com/weibeld/claude-user-settings
+git clone --bare https://github.com/weibeld/claude
 ```
 
 > **Note:** this works from any directory of the system.
@@ -23,7 +23,7 @@ git clone --bare https://github.com/weibeld/claude-user-settings
 Change into the cloned repository:
 
 ```bash
-cd claude-user-settings.git
+cd claude.git
 ```
 
 And check out the files to the `~/.claude` work tree:
@@ -39,7 +39,7 @@ git --work-tree ~/.claude checkout
 Change into the repository directory:
 
 ```bash
-cd claude-user-settings.git
+cd claude.git
 ```
 
 And manage the files tracked by the repository in `~/.claude` with the usual Git commands by including the `--work-tree` option.
@@ -74,10 +74,10 @@ git --work-tree ~/.claude push
     ```
 - Use the [`--git-dir` option or `GIT_DIR` environment variable](https://git-scm.com/docs/git#Documentation/git.txt---git-dirpath) instead of changing into the repository directory:
     ```bash
-    git --git-dir ~/repos/weibeld/claude-user-settings.git --work-tree ~/.claude ...
+    git --git-dir ~/repos/weibeld/claude.git --work-tree ~/.claude ...
     ```
     ```bash
-    export GIT_DIR=~/repos/weibeld/claude-user-settings.git
+    export GIT_DIR=~/repos/weibeld/claude.git
     ```
 
 ## References
