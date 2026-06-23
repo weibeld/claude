@@ -1,0 +1,14 @@
+.last-cleanup
+.last-update-result.json
+backups/
+cache/
+chrome/
+debug/
+history.jsonl
+mcp-needs-auth-cache.json
+paste-cache/
+plugins/
+projects/
+sessions/
+shell-snapshots/
+stats-cache.json
