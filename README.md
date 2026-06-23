@@ -42,7 +42,7 @@ Change into the repository directory:
 cd claude.git
 ```
 
-And manage the files tracked by the repository in `~/.claude` with the usual Git commands by including the `--work-tree` option.
+And manage the files in `~/.claude` with the usual Git commands by using the `--work-tree` option for those commands that must be run within a work tree:
 
 For example:
 
@@ -59,10 +59,12 @@ git --work-tree ~/.claude commit
 ```
 
 ```
-git --work-tree ~/.claude push
+git push
 ```
 
-### Tips
+> **Note:** commands that interact or track physical files or modify the state of the workspace (e.g. `status`, `add`, `commit`, etc.) must be run within a work tree and thus require the `--work-tree` option. Other commands (such as `push`) don't need to be run in a work tree and thus don't require the `--work-tree` option.
+
+## Tips
 
 - Use the `GIT_WORK_TREE` environment variable instead of the `--work-tree` option:
     ```bash
