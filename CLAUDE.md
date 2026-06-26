@@ -1,5 +1,9 @@
 # CLAUDE.md — Global
 
+## General conventions
+
+- When creating a CLAUDE.md file, always create it in the .claude/ sub-directory
+
 ## Writing conventions
 
 - Always add an empty line below a markdown header (i.e. #, ##, ###, or ####)
